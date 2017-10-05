@@ -1,0 +1,24 @@
+{
+  "name": "cjlib",
+  "version": "0.0.38",
+  "description": "Customer Journey Library",
+  "main": "./bundles/cjlib.umd.js",
+  "typings": "./index.d.ts",
+  "dependencies":{
+    "@ng-bootstrap/ng-bootstrap": "1.0.0-alpha.30"
+  },
+  "peerDependencies": {
+    "@angular/core": "^2.4.10 || ^4.0.0",
+    "@angular/common": "^2.4.10 || ^4.0.0",
+    "@angular/http": "^2.4.10 || ^4.0.0",
+    "@angular/router" : "^3.4.10 || ^4.0.0",
+    "@angular/animations" : "^3.4.10 || ^4.0.0",
+    "classlist.js": "^1.1.20150312",
+    "web-animations-js": "^2.3.1",
+    "intl": "^1.2.5",
+    "bootstrap": "^3.3.7"
+  },
+  "publishConfig": {
+    "registry": "http://arti0.sede.corp.sanpaoloimi.com:8081/artifactory/api/npm/npm-local"
+  }
+}

@@ -1,0 +1,8 @@
+<button class="btn button" (click)="_onClickButton()" [disabled]="disabled" [ngClass]="{'default': nbpStyle === _style.DEFAULT,
+                    'primary':  nbpStyle === _style.PRIMARY,
+                    'secondary':  nbpStyle === _style.SECONDARY,
+                    'outline' : nbpStyle === _style.OUTLINE,
+                    'select' : nbpType === _type.SELECT,
+                    'lg' : nbpSize === _size.LG, 
+                    'on': nbpChecked
+                    }"><div [ngClass]="{'allineamento-select':nbpType === _type.SELECT}"><span *ngIf="!!nbpIcon" class="icon button-icon" [ngClass]="nbpIcon"></span> <span [ngClass]="{'button-label-icon': nbpIcon , 'button-label': !nbpIcon}">{{nbpLabel}}</span></div></button>

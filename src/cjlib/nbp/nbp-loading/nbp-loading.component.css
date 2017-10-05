@@ -1,0 +1,2 @@
+.nbp-spinner-wrapper{position:fixed;width:100%;height:100vh;display:flex;align-items:center;background-color:transparent;top:0;left:0;z-index:99999}.nbp-spinner-overlay{position:fixed;width:100%;height:100%;display:flex;align-items:center;top:0;left:0;background-color:rgba(0,0,0,.5);z-index:99999}.nbp-spinner{display:flex;width:90px;height:90px;background-image:url(/cjlib/assets/images/ISP-loading-spinner.gif);margin:0 auto}
+/*# sourceMappingURL=nbp-loading.component.css.map */

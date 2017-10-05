@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        { "glob": "**/*", "input": "../node_modules/cjlib/assets/images", "output": "./cjlib/assets/images" }
       ],
       "index": "index.html",
       "main": "main.ts",
