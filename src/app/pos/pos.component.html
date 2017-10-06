@@ -4,40 +4,60 @@
     <nbp-selection-panel></nbp-selection-panel>
 
   <nbp-dividing-line nbpTitle="Titolo e icona" nbpTitleIcon="icomoon-Acquisto_borsa1" (nbpClick)="buttonClicked($event)"></nbp-dividing-line>
-  <nbp-shadowed-panel></nbp-shadowed-panel>
+    <nbp-shadowed-panel>
+      <p>Lorem ipsum dolor sit amet,</p>
+      <p>consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet,</p>
+      <p>consectetur adipiscing elit.</p>
+    </nbp-shadowed-panel>
 
   <nbp-dividing-line showButton nbpTitle="Titolo, icona e pulsante" nbpTitleIcon="icomoon-Acquisto_borsa1" nbpButtonIcon="icomoon-Acquisto_borsa1" npbButtonLabel="Acquista" (nbpClick)="buttonClicked($event)">
   </nbp-dividing-line>
   <div class="row">
-    <div class="col col-sm-8">
-      <nbp-datepicker></nbp-datepicker>
-    </div>
-    <div class="col col-sm-8">
-      <nbp-datepicker name='datePicker_1' [(ngModel)]="now" disabled>
-      </nbp-datepicker>
-    </div>
+    <nbp-selection-panel
+      nbpTitle="Titolo"
+      [nbpButtonLabel]="label1"
+      [nbpSelectedButtonLabel]="label2"
+      [imageUrl]="'http://temi.repubblica.it/UserFiles/economiaefinanza-lettera-allinvestitore/Image/intesa/l.jpg'">
+    </nbp-selection-panel>
   </div>
   <nbp-dividing-line nbpTitle="Titolo" (nbpClick)="buttonClicked($event)">
   </nbp-dividing-line>
+    <nbp-paging
+    [nbpConfiguration]="pagingStep">
+    </nbp-paging>
   <div class="row">
-    <nbp-checkbox class="col-md-4 col-md-offset-1" name="checkbox1" nbpLabel="Attiva" [(ngModel)]="isActive" nbpYellowBorder required>
-    </nbp-checkbox>
-    <nbp-checkbox class="col-md-4 col-md-offset-1" [name]="name" [(ngModel)]="isActive1" required> Attiva
-    </nbp-checkbox>
-    <nbp-checkbox class="col-md-4 col-md-offset-1" name="checkbox3" [(ngModel)]="isActive2"> Attiva
-    </nbp-checkbox>
-    <nbp-checkbox class="col-md-4 col-md-offset-1" name="checkbox4" disabled [(ngModel)]="isActive3"> Disattiva
-    </nbp-checkbox>
-  </div>
-  <div class="row">
-    <nbp-radio class="col-md-4 col-md-offset-1" nbpLabel="male" [(ngModel)]="sex" name="gender" value="M" required>
-    </nbp-radio>
-    <nbp-radio class="col-md-4 col-md-offset-1" [(ngModel)]="sex" name="gender" value="F" required>famale
-    </nbp-radio>
-    <nbp-radio class="col-md-4 col-md-offset-1" [(ngModel)]="sex2" name="Disabled" disabled>male
-    </nbp-radio>
-    <nbp-radio class="col-md-4 col-md-offset-1" [(ngModel)]="sex4" name="Disabled" disabled>famale
-    </nbp-radio>
+    <nbp-modal #componente
+               nbpTitle='Commento Testo'
+               nbpSubTitle='Esprimi un commento'
+               [(nbpOpened)]='isOpened'>
+
+      <nbp-input-container nbpLabel="Commento">
+        <nbp-input-text name="commento" [(ngModel)]="commento">
+        </nbp-input-text>
+      </nbp-input-container>
+
+    </nbp-modal>
+
+    <div class="row col-md-24">
+      <div class="col-md-24">
+        <ul>
+          <li>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar tristique enim efficitur commodo. Nam pellentesque   faucibus risus. Maecenas consequat gravida tortor a iaculis. Sed id sapien et enim dignissim malesuada. Integer lacinia justo ut nisi consectetur semper.
+            </p>
+          </li>
+          <li>
+            <p>
+              Fusce laoreet nunc nec molestie euismod. Quisque mattis quam mi, et malesuada urna fringilla eget. Sed non mi eu lacus volutpat congue ut nec est. Nullam cursus facilisis est, ut ultrices ligula semper in. Fusce lobortis felis id vestibulum sollicitudin. Maecenas a est congue, egestas turpis at, convallis quam. Sed venenatis cursus augue, vel scelerisque nunc blandit in.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-24">
+        <button class="btn btn-default" (click)='_openModal()'>Open Modal</button>
+      </div>
+    </div>
   </div>
   <nbp-dividing-line nbpTitle="Titolo" (nbpClick)="buttonClicked($event)">
   </nbp-dividing-line>
@@ -57,7 +77,7 @@
       </nbp-button>
     </div>
     <div class="col col-sm-8">
-      <nbp-button [nbpLabel]="'Primay Style'" [nbpType]="actionType" [nbpStyle]="secondaryStyle" (nbpClick)="callback($event)">
+      <nbp-button [nbpLabel]="'Primay Style'" [nbpType]="actionType" [nbpStyle]="primaryStyle" (nbpClick)="callback($event)">
       </nbp-button>
     </div>
     <div class="col col-sm-8">
