@@ -19,10 +19,6 @@ const routes: Routes = [
     path: 'pos',
     component: PosComponent,
     children: []
-  },
-  {
-    path: 'prossima',
-    children: []
   }
 ];
 
