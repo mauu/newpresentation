@@ -1,5 +1,6 @@
 import { INbpHeaderCustomer } from './../nbp-commons/nbp-commons.interface';
 export declare class NbpCustomerInfoComponent {
+    
     /**
      * Oggetto che definisce il cliente.
      */
