@@ -20,8 +20,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "nbp",
       "styles": [
-        "styles.css",
-        "less/app.less"
+        "styles.less"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
