@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { ElementiComponent } from './elementi/elementi.component';
 import { HomeComponent } from './home/home.component';
 import { PosComponent } from './pos/pos.component';
+import { ComboComponent } from './elementi/combo/combo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ElementiComponent,
     HomeComponent,
-    PosComponent
+    PosComponent,
+    ComboComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
